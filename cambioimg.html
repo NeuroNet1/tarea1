@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Capibara Switch</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #4a148c;
+      margin-bottom: 20px;
+    }
+
+    .capibara-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .capibara-container:hover {
+      transform: scale(1.05);
+    }
+
+    .capibara-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease;
+      border-radius: 20px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Haz clic en el Capibara 🐾</h1>
+  
+  <div class="capibara-container" onclick="cambiarImagen()">
+    <img id="capibara" src="capibaradur.jpg" alt="capbai.jpg">
+  </div>
+
+  <div class="footer">Hecho con ❤️ para capibaras</div>
+
+  <script>
+    const imagenes = [
+      "capibaradur.jpg",  // capibaradur.jpg
+      "capbai.jpeg" ,   // capbai.jpeg
+    ];
+    let index = 0;
+
+    function cambiarImagen() {
+      index = (index + 1) % imagenes.length;
+      document.getElementById("capibara").src = imagenes[index];
+    }
+  </script>
+
+</body>
+</html>

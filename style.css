@@ -1,0 +1,273 @@
+/* Configuración Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Estilos de la Navegación */
+body {
+    background-color: #F0F0F0;
+    color: #333;
+    line-height: 1.7;
+}
+
+#header {
+    background-color: #2C3E50;
+    padding: 20px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 25px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    padding: 12px 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.navbar a:hover {
+    background-color: #FF6F61;
+    transform: scale(1.05);
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(135deg, #4CAF50, #00B894);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    animation: fadeIn 2s ease-out;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+
+.cta-button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #D15A50;
+    transform: scale(1.1);
+}
+
+/* Animación Fade-In */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Sección de Detalles del Producto */
+#product-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 50px;
+    transition: all 0.6s ease-in-out;
+}
+
+.product-info {
+    width: 60%;
+}
+
+.product-info h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+}
+
+.product-info .price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FF6F61;
+}
+
+.product-image {
+    width: 35%;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Características del Producto */
+#features {
+    background-color: #fff;
+    padding: 80px;
+    text-align: center;
+}
+
+#features h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.feature-item {
+    background-color: #F7F7F7;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #FF6F61;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Testimonios */
+#testimonials {
+    background-color: #F7F7F7;
+    padding: 80px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Preguntas Frecuentes */
+#faq {
+    background-color: #212121;
+    padding: 60px;
+}
+
+#faq h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 35px;
+}
+
+.faq-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #FF6F61;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-item p {
+    font-size: 20px;
+    color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+#footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: footerAnimation 3s ease-out infinite;
+}
+
+#footer p {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Animación Footer */
+@keyframes footerAnimation {
+    0% { transform: translateY(15px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+#toggle-darkmode {
+  background-color: #1b263b;
+  color: #00b4d8;
+  border: 1px solid #00b4d8;
+}
+
+body.dark-mode #toggle-darkmode {
+  background-color: #00b4d8;
+  color: #0d1b2a;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soy Joel Gómez</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap');
+
+    :root {
+      --bg-color: #0e0e17;
+      --primary: #00ffc3;
+      --secondary: #ff6ec7;
+      --text: #f0f0f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #1b1b2f, #162447);
+      color: var(--text);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      text-align: center;
+      max-width: 900px;
+      margin-bottom: 50px;
+    }
+
+    .hero h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: titleGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes titleGlow {
+      from {
+        text-shadow: 0 0 5px var(--primary);
+      }
+      to {
+        text-shadow: 0 0 20px var(--secondary), 0 0 30px var(--primary);
+      }
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+      gap: 20px;
+    }
+
+    .image-container {
+      flex: 1;
+      max-width: 600px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    .image-container img {
+      width: 100%;
+      transition: transform 1.5s ease, filter 1s ease;
+      filter: grayscale(30%) contrast(1.1) brightness(1.1);
+    }
+
+    .image-container:hover img {
+      transform: scale(1.05);
+      filter: none;
+    }
+
+    .story {
+      flex: 1;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      font-size: 1.1rem;
+      color: #ddd;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .story p {
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #999;
+      text-align: center;
+    }
+
+    img{
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Soy Joel Gómez</h1>
+    <p>Millonario, soñador y emprendedor.</p>
+  </div>
+
+  <div class="image-text-container">
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/e5/fe/6b/e5fe6b7bed35da6a893e0a74f92c7c80.jpg" alt="Joel y su G-Wagon">
+    </div>
+
+    <div class="story">
+      <p>Mi nombre es Joel Gómez y esta es mi historia. Empecé sin contactos, sin dinero, solo con visión y ganas de romperla en grande.</p>
+      <p>Con esfuerzo, fe y mentalidad de tiburón, escalé montañas que otros ni se atreven a mirar. Hoy dirijo compañías, viajo por el mundo y manejo una G-Wagon Brabus como reflejo de mi disciplina y sueños cumplidos.</p>
+      <p>Esto no es suerte. Es destino escrito con trabajo. Y apenas estoy comenzando.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Joel Gómez — Con estilo, éxito y una historia que inspira.
+  </footer>
+
+</body>
+</html>
